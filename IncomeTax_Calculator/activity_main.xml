@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp"
+        android:text="@string/title_text"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="#4285F4"
+                android:padding="24dp"
+                android:text="@string/incomes_heading"
+                android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/basic_sal"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/yearly_sal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Monthly Salary"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/savings_acct"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/savings_income"
+                    android:layout_width="175dp"
+                    android:layout_height="72dp"
+                    android:hint="Income from SA"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="textStart"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="24dp"
+                    android:paddingRight="60dp"
+                    android:paddingBottom="24dp"
+                    android:text="@string/equity_ppf"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/equity"
+                    android:layout_width="180dp"
+                    android:layout_height="77dp"
+                    android:hint="Equity Value"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="#4285F4"
+                android:padding="24dp"
+                android:text="@string/allowances"
+                android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/leave"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/lta"
+                    android:layout_width="172dp"
+                    android:layout_height="72dp"
+                    android:hint="LTA"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="textStart"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="193dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="24dp"
+                    android:paddingRight="60dp"
+                    android:paddingBottom="24dp"
+                    android:text="@string/houseRA"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/hra"
+                    android:layout_width="180dp"
+                    android:layout_height="77dp"
+                    android:hint="HRA"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="199dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="24dp"
+                    android:paddingRight="60dp"
+                    android:paddingBottom="24dp"
+                    android:text="@string/special"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/special"
+                    android:layout_width="180dp"
+                    android:layout_height="77dp"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+
+                    />
+
+            </LinearLayout>
+
+            <Button
+
+                android:id="@+id/resultBtn"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:background="#4285F4"
+                android:text="@string/resultBtn"
+                android:textColor="#fff" />
+
+
+            <TextView
+                android:id="@+id/resultTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="24dp"
+                android:paddingRight="60dp"
+                android:paddingBottom="24dp"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20dp"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:id="@+id/tax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSuccess"
+                android:paddingLeft="20dp"
+                android:paddingTop="24dp"
+                android:paddingRight="60dp"
+                android:paddingBottom="24dp"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#fff"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
